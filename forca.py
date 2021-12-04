@@ -58,13 +58,13 @@ def jogo():
             enforcou = True
             imprime_mensagem_perdedor(palavra_secreta)
 
-    print("\033[38mFim do jogo")
+    print("Fim do jogo")
 
 
 def imprime_mensagem_perdedor(palavra_secreta):
     print("Puxa, você foi enforcado!")
     print("A palavra era {}".format(palavra_secreta))
-    print("\033[31m       {}           {}")
+    print("       {}           {}")
     print("         \  _---_  /")
     print("          \/     \/")
     print("           |() ()|")
@@ -76,7 +76,7 @@ def imprime_mensagem_perdedor(palavra_secreta):
 
 def imprime_mensagem_vencedor():
     print("Parabéns, você ganhou!")
-    print("\033[33m       ___________      ")
+    print("       ___________      ")
     print("      '._==_==_=_.'     ")
     print("      .-\\:      /-.    ")
     print("     | (|:.     |) |    ")
