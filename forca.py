@@ -49,7 +49,7 @@ def jogo():
         for letras in letras_erradas:
             print(letras, end=" ")
         print("")
-        print(f"Tentativas restantes: {6 - len(letras_erradas)}")
+        print(f"Tentativas restantes: {7 - len(letras_erradas)}")
 
         if list(palavra_secreta) == letras_acertadas:
             acertou = True
