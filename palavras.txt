@@ -23,3 +23,5 @@ siriguela
 graviola
 amora
 pitaia
+abacate
+framboesa
