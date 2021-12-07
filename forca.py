@@ -25,7 +25,7 @@ def jogo():
 
     while not acertou and not enforcou:
         acertou_letra = False
-        chute = input("Qual a letra?")
+        chute = input("Qual a letra? Digite: ")
         chute = chute.strip()
 
         posicao = 0
