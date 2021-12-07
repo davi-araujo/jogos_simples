@@ -53,7 +53,7 @@ def jogo():
         if list(palavra_secreta) == letras_acertadas:
             acertou = True
             print("Voce escapou da forca")
-        if len(letras_erradas) == 7:
+        if len(letras_erradas) == 6:
             enforcou = True
             print("Voce morreu enforcado")
 
