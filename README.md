@@ -6,8 +6,8 @@
 
 ### Instruções Gerais
 
-- Os 4 arquivos (3 arquivos *.py* e 1 arquivo *.txt*) devem estar armazenados em uma mesma pasta.
-- Rodando apenas o arquivo *jogos.py*, com a condição acima sendo verdadeira, o usuário já consegue acesso aos dois jogos. Porém, caso seja desejado, pode executar apenas o arquivo de cada jogo para ter acesso unicamente ao jogo. 
+- Os 6 arquivos (5 arquivos *.py* e 1 arquivo *.txt*) devem estar armazenados em uma mesma pasta.
+- Rodando apenas o arquivo *jogos.py*, com a condição acima sendo verdadeira, o usuário já consegue acesso aos quatro jogos (forca, adivinhação, blackjack e jogo da velha). Porém, caso seja desejado, pode executar apenas o arquivo de cada jogo para ter acesso unicamente ao jogo. 
 - O único **requisito** para executar os arquivos é ter o Python3 instalado. Para instalar, basta:
     ### Windows
     1. Instale o Python pelo site: https://www.python.org/downloads/
