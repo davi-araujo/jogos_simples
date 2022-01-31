@@ -85,7 +85,6 @@ def jogo():
             valor = random.randrange(0, 13)
             carta = baralho[naipe][valor]
 
-        # print(carta)
 
         baralho[naipe][valor] = 0
         mao.append(carta)

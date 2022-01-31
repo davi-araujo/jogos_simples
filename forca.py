@@ -26,6 +26,19 @@ def jogo():
     while not acertou and not enforcou:
         acertou_letra = False
         chute = input("Qual a letra? Digite: ")
+
+        if(chute == '='):
+            chute_palavra = input("Qual a palavra? ")
+
+            if(chute_palavra.upper() == palavra_secreta.upper()):
+                acertou = True
+                print("Voce escapou da forca")
+                continue
+            else:
+                enforcou = True
+                print("Voce morreu enforcado")
+                continue
+
         chute = chute.strip()
 
         posicao = 0
@@ -48,14 +61,14 @@ def jogo():
         for letras in letras_erradas:
             print(letras, end=" ")
         print("")
-        print(f"Tentativas restantes: {6 - len(letras_erradas)}")
+        print(f"Tentativas restantes: {6 - len(letras_erradas)}", "Se quiser chutar a palavra, digite '='", sep="\n")
 
         if list(palavra_secreta) == letras_acertadas:
             acertou = True
             print("Voce escapou da forca")
         if len(letras_erradas) == 6:
             enforcou = True
-            print("Voce morreu enforcado")
+            print(f"Voce morreu enforcado. A palavra é {palavra_secreta}")
 
     print("Fim do jogo")
 
