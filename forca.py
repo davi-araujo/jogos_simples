@@ -1,7 +1,13 @@
 import random
+import os
+
+
+def clear():
+    os.system('cls')
 
 
 def jogo():
+    clear()
     print("***************************")
     print("Bem vindo ao jogo da Forca!")
     print("***************************")
@@ -26,6 +32,7 @@ def jogo():
     while not acertou and not enforcou:
         acertou_letra = False
         chute = input("Qual a letra? Digite: ")
+        clear()
 
         if(chute == '='):
             chute_palavra = input("Qual a palavra? ")
@@ -36,19 +43,21 @@ def jogo():
                 continue
             else:
                 enforcou = True
-                print("Voce morreu enforcado")
+                print(f"Voce morreu enforcado. A palavra é {palavra_secreta}")
                 continue
 
         chute = chute.strip()
 
         posicao = 0
+
+        print("\n\t", end="")
         for letra in palavra_secreta:
             if chute.upper() == letra.upper():
                 letras_acertadas[posicao] = letra
                 acertou_letra = True
             print(letras_acertadas[posicao], end=" ")
             posicao += 1
-        print("")
+        print("\n")
 
         if not acertou_letra:
             if chute in letras_erradas:
